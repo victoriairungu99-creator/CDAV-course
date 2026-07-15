@@ -1,0 +1,282 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyN4vAGUX2DDjDohqeJXmJaB",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/victoriairungu99-creator/CDAV-course/blob/main/DAY%20THREE%20-WEDNESDAY%20SESSION\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 2,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "oypqD_JmO3cC",
+        "outputId": "7d28495b-a98f-4052-f978-6038f78c8444"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter meal of choice: Pilau and beef\n",
+            "Enter price of meal: 250.00\n",
+            "================\n",
+            "RESTAURANT BILL\n",
+            "================\n",
+            "The tip is: 45.00\n",
+            "The tax is: 40.00\n",
+            "The total price of your meal is: 335.00\n"
+          ]
+        }
+      ],
+      "source": [
+        "meal=input(\"Enter meal of choice: \")\n",
+        "price=float(input(\"Enter price of meal: \"))\n",
+        "tip=0.18*price\n",
+        "tax=0.16*price\n",
+        "total_price=price+tip+tax\n",
+        "print(\"================\")\n",
+        "print(\"RESTAURANT BILL\")\n",
+        "print(\"================\")\n",
+        "print(f\"The tip is: {tip:.2f}\")\n",
+        "print(f\"The tax is: {tax:.2f}\")\n",
+        "print(f\"The total price of your meal is: {total_price:.2f}\")\n",
+        "\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "is_raining=True\n",
+        "if is_raining:\n",
+        "  print(\"stay indoors\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "o-GJ3TRDY_Ir",
+        "outputId": "068aff41-2f11-4e76-b15a-926f931cf391"
+      },
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "stay indoors\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "balance=500\n",
+        "withdrawal_amt=float(input(\"How much do you want to withdrtaw\"))\n",
+        "if balance<withdrawal_amt:\n",
+        "  print(\"Insufficient balance\")\n",
+        "  print(\"Top up and try again\")\n",
+        "\n",
+        "if balance>=withdrawal_amt:\n",
+        "    print(\"Withdrawal successful\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "EImYKLyciCLv",
+        "outputId": "294ab7e2-74d4-4667-def0-b8161f971388"
+      },
+      "execution_count": 33,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "How much do you want to withdrtaw4000\n",
+            "Insufficient balance\n",
+            "Top up and try again\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "exam_marks=int(input(\"Enter marks scored: \"))\n",
+        "if exam_marks>=50:\n",
+        "  print(\"Excellent work!, continue aiming for the stars\")\n",
+        "\n",
+        "if exam_marks<50:\n",
+        "  print(\"Good job, aim for higher next time\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wZ0fqbONkNkp",
+        "outputId": "6e414e99-7042-48d5-d915-fce9b508cabb"
+      },
+      "execution_count": 38,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter marks scored: 72\n",
+            "Excellent work!, continue aiming for the stars\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "widgets_number=int(input(\"How many widgets do you want?: \"))\n",
+        "gizmos_number=int(input(\"How many gizmos do you want?: \"))\n",
+        "widget_weight=75\n",
+        "gizmo_weight=112\n",
+        "total_order_weight=(widgets_number*widget_weight+gizmos_number*gizmo_weight)\n",
+        "print(\"==================\")\n",
+        "print(\"ORDER WEIGHT\")\n",
+        "print(\"==================\")\n",
+        "print(\"The total weight of your order is:\",total_order_weight)\n",
+        "print(\"Thankyou for your order,welcome again\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "aYpCunjYl0W3",
+        "outputId": "e57f6c28-ead5-4b36-d8b3-dd58b4660a02"
+      },
+      "execution_count": 57,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "How many widgets do you want?: 25\n",
+            "How many gizmos do you want?: 32\n",
+            "==================\n",
+            "ORDER WEIGHT\n",
+            "==================\n",
+            "The total weight of your order is: 5459\n",
+            "Thankyou for your order,welcome again\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "password=input(\"Enter password: \")\n",
+        "if password==\"python123\":\n",
+        "  print(\"grant entry\")\n",
+        "else:\n",
+        "  print(\"Deny access\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Z8Aq4v00yya8",
+        "outputId": "c4e33c67-fa73-4010-d523-9b9ff8b971f7"
+      },
+      "execution_count": 54,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter password: 00000000\n",
+            "Deny access\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Write a program that takes a value from the user, the program should print if the value is:\n",
+        "\n",
+        ".divisible by two\n",
+        "\n",
+        ".divisible by three\n",
+        "\n",
+        ".divisible by both two and three\n",
+        "\n",
+        "other wise it should print not divisible by both two and three\n"
+      ],
+      "metadata": {
+        "id": "KCiZvM20DAL9"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "value=int(input(\"Enter value: \"))\n",
+        "if value%2==0 and value%3==0:\n",
+        "  print(\"divisible by both two and three\")\n",
+        "\n",
+        "elif value%2==0:\n",
+        "  print(\"divisible by two\")\n",
+        "\n",
+        "elif value==(\"value%3==0\"):\n",
+        "  print(\"divisible by three\")\n",
+        "\n",
+        "else:\n",
+        "  print(\"not divisible by both two and three\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "veT1NXHlEK_s",
+        "outputId": "838012eb-9daa-4509-aa0a-38d004dbc231"
+      },
+      "execution_count": 73,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter value: 18\n",
+            "divisible by both two and three\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "70WGqt8TR6Qa"
+      }
+    }
+  ]
+}
