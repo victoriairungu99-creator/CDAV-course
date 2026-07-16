@@ -1,0 +1,166 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOGDqHD9oHLnrGUW+hdQAXI",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/victoriairungu99-creator/CDAV-course/blob/main/DAY%20THREE-WHILE\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 18,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "VcUMzH65aGks",
+        "outputId": "fd26e4a8-b132-4d09-9bf5-8d7c6ac0838b"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter alphabet: o\n",
+            "Alphabet is a vowel\n"
+          ]
+        }
+      ],
+      "source": [
+        "alphabet=input((\"Enter alphabet: \"))\n",
+        "if alphabet==\"a\" or alphabet== \"e\" or alphabet== \"i\" or alphabet== \"o\" or alphabet== \"u\":\n",
+        "  print(\"Alphabet is a vowel\")\n",
+        "\n",
+        "elif alphabet==(\"y\"):\n",
+        "  print(\"Alphabet is a vowel and consonant\")\n",
+        "\n",
+        "else:\n",
+        "  print(\"Letter is a consonant\")"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "r_n=int(input(\"Enter row number: \"))\n",
+        "c_l=input(\"Enter column letter: \")\n",
+        "c_n=input(\"Enter column number: \" )\n",
+        "if c_l==\"a\"or c_l==\"c\"or c_l==\"e\"or c_l==\"g\":\n",
+        "  if r_n%2==0:\n",
+        "    print(\"Column begins with white\")\n",
+        "  else:\n",
+        "    print(\"Column begins with black\")\n",
+        "\n",
+        "elif c_l==\"b\"or c_l==\"d\"or c_l==\"f\"or c_l==\"h\":\n",
+        "  if r_n%2==0:\n",
+        "    print(\"Column begins with white\")\n",
+        "\n",
+        "  else:\n",
+        "    print(\"Column begins with black\")\n",
+        "\n",
+        "else:\n",
+        "    print(\"Invalid\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "1wHeS6AAfJpc",
+        "outputId": "637633ce-c58b-49c8-ab77-21cf0e568476"
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter row number: 5\n",
+            "Enter column letter: b\n",
+            "Enter column number: 2\n",
+            "Column begins with black\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Loops\n"
+      ],
+      "metadata": {
+        "id": "r5D4s9Jh5wmL"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "-We have two types of loops; the while loop and the for loop\n",
+        "-Counter is used when you are dealing with figures to give the figure a variable\n",
+        "-The loops is executed only if the boolean output is true\n",
+        "-We have a control feature where it continually subtracts the value until you reach a false boolean\n"
+      ],
+      "metadata": {
+        "id": "AoQvJeEi6w3C"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "password_incorrect=True\n",
+        "password=\"secret\"\n",
+        "\n",
+        "while password_incorrect:\n",
+        "  user_pass=input(\"Enter password: \")\n",
+        "  if user_pass==password:\n",
+        "    print(\"Welcome back.You are logged in\")\n",
+        "    password_incorrect=False\n",
+        "\n",
+        "  else:\n",
+        "    print(\"Password incorrect! Please try again\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "TnRdaa577Yq8",
+        "outputId": "79c2d382-8494-4ba9-f487-56d2d6989c6e"
+      },
+      "execution_count": 39,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter password: python\n",
+            "Password incorrect! Please try again\n",
+            "Enter password: table\n",
+            "Password incorrect! Please try again\n",
+            "Enter password: door\n",
+            "Password incorrect! Please try again\n",
+            "Enter password: secret\n",
+            "Welcome back.You are logged in\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
