@@ -1,0 +1,311 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOA/C+jmIlyr/LAf/fe36Uv",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/victoriairungu99-creator/CDAV-course/blob/main/day%206-%20continuation\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [],
+      "metadata": {
+        "id": "VDik6TIsvZ6P"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#.count()- gets the number of occurences of an item\n",
+        "#.index()- gets the position of an item but if they are more than one then it will give you the position of the item appearing first in the list\n",
+        "#.apend()- allows you to add an item to the end\n",
+        "#.extend()- allows you to add more than one item on a list\n",
+        "#.pop()- allows you to remove items from a list\n",
+        "#.insert()- allows you to insert items on a list on a specific index\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "\n",
+        "marks=[20,34,18,45,4,7]\n",
+        "marks.sort()\n",
+        "print(marks)\n",
+        "marks.reverse()\n",
+        "print(marks)\n",
+        "average=sum(marks)/len(marks)\n",
+        "print(average)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nD22wJVWvc03",
+        "outputId": "5d723c60-2654-4049-ce0c-87046324ae98"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[4, 7, 18, 20, 34, 45]\n",
+            "[45, 34, 20, 18, 7, 4]\n",
+            "21.333333333333332\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 12,
+      "metadata": {
+        "id": "DO_fbf72vQLS",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "409002e4-24ad-41ae-d487-2fbc0995c341"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[10, 20, 30]\n",
+            "[10, 20, 30, 40]\n",
+            "[10, 15, 20, 30, 40]\n",
+            "Average score: 23.0\n"
+          ]
+        }
+      ],
+      "source": [
+        "scores=[10,20,30]\n",
+        "print(scores)\n",
+        "scores.append(40)\n",
+        "print(scores)\n",
+        "scores.insert(1,15)\n",
+        "print(scores)\n",
+        "average=sum(scores)/len(scores)\n",
+        "print(\"Average score:\", average)"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Create a program that keps asking the user for numbers until they press=\n",
+        "\n",
+        "The program should then output:\n",
+        "\n",
+        "-sum\n",
+        "\n",
+        "-lowest value\n",
+        "\n",
+        "-highest value\n",
+        "\n",
+        "-average value\n",
+        "\n",
+        "The program should not  crash if the user enters a non-numerical value\n"
+      ],
+      "metadata": {
+        "id": "3fNCWbJw0vkz"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "numbers=[12,16,19,24,10,15,18,20]\n",
+        "numbers[-1: 1]\n",
+        "print(numbers)\n",
+        "for num in numbers:\n",
+        "  print(num)\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "IIRd9lX01sBV",
+        "outputId": "4b7549fd-a388-42e9-ede1-a4b4adcc20bb"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[12, 16, 19, 24, 10, 15, 18, 20]\n",
+            "12\n",
+            "16\n",
+            "19\n",
+            "24\n",
+            "10\n",
+            "15\n",
+            "18\n",
+            "20\n",
+            "24\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "highest=max(numbers)\n",
+        "print(highest)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "V_yqitLMdFWD",
+        "outputId": "cfa12842-6f33-4c5c-e37a-48e42b669792"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "24\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(min(numbers))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "wLIfVDFmdMiV",
+        "outputId": "28ec0659-0093-4a43-a8a1-da9da93bcb2d"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "10\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "highest = numbers[0]\n",
+        "for number in numbers:\n",
+        "  if number > highest:\n",
+        "    highest=number\n",
+        "print(highest)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "n-4qoBtQeYsD",
+        "outputId": "a4044d7e-140c-4a9c-ce01-719aa68059d4"
+      },
+      "execution_count": 30,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "24\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "students=[12,16,19,24,10,15,18,20]\n",
+        "count=0\n",
+        "for grade in students:\n",
+        "  if grade>=15:\n",
+        "    count+=1\n",
+        "print(count)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "geFpmgIpmsV4",
+        "outputId": "ef927d0f-439a-4217-aaa0-98ee6902b1df"
+      },
+      "execution_count": 33,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "6\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "range(1,51)\n",
+        "even=[]\n",
+        "evens=[X for X in range(1,51)if X%2==0]\n",
+        "even.append(evens)\n",
+        "print(even)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "_2Gn9AZ9tzk7",
+        "outputId": "b4d4c493-f8cc-4d15-d566-b1595f40bd9c"
+      },
+      "execution_count": 34,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50]]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "rFoxLi4Stzhf"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
