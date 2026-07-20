@@ -1,0 +1,193 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOj0rw6Az1Q/BLbmJ4JS/aI",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/victoriairungu99-creator/CDAV-course/blob/main/part%20of%20day%206%20work-%20week%202%20Monday\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# Lists"
+      ],
+      "metadata": {
+        "id": "69QoRUnsR9Ic"
+      }
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 2,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "ps1D7sXwR8Sx",
+        "outputId": "6e5fc6a4-f5b2-41f7-8b7d-4d469c9213b0"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['John', 'Mary', 'Evans']\n",
+            "<class 'list'>\n"
+          ]
+        }
+      ],
+      "source": [
+        "students=[\"John\",\"Mary\",\"Evans\"]\n",
+        "print(students)\n",
+        "print(type(students))"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#splitting- splits them into lists\n",
+        "school=\"soma,riverdale,strathmore\"\n",
+        "print(school.split(\",\"))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uJCiKkbQTOjD",
+        "outputId": "13b91f68-3134-4605-f358-5da917e86f7f"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['soma', 'riverdale', 'strathmore']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#Escape characters and string formatting\n",
+        "#Their syntax is a back slash(/)\n",
+        "introduction=\"I am John.\\nMy age is 18.\"\n",
+        "print(introduction)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Cfb2wu3LVPaP",
+        "outputId": "c801c7fc-abf4-4f43-a086-5ca5bd1f13aa"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "I am John.\n",
+            "My age is 18.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "introduction=\"\\tI am John.\\n\\tMy age is 18.\"\n",
+        "print(introduction)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rGICyDZgWss8",
+        "outputId": "b8384caf-4187-4bfc-9765-beedd978cbca"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "\tI am John.\n",
+            "\tMy age is 18.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "introduction='I\\'m John.\\nMy age is 18.'\n",
+        "print(introduction)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RzEHXwWAW02R",
+        "outputId": "5aaaf0dc-efba-49a3-9c95-5d2ddde7f72d"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "I'm John.\n",
+            "My age is 18.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "cols=\"name,gender,grade\"\n",
+        "print(cols.split(\",\"))\n",
+        "\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "RjepPN-QYy0i",
+        "outputId": "6c9fd8cc-6c06-4aef-ed98-3c9891163538"
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['name', 'gender', 'grade']\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
